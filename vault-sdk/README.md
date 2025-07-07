@@ -28,3 +28,10 @@ console.log(composition)
 ```
 
 `getComposition()` aggregates vault asset configs with live values from `IHoldings` to calculate the current weights.
+
+```ts
+const queue = await sdk.getRedemptionQueue('0xVault')
+console.log(queue)
+```
+
+`getRedemptionQueue()` sums pending and claimable redeem requests for the vault and can optionally take a user address as second parameter.

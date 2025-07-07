@@ -8,10 +8,12 @@ Folder overview:
 - `docs` - documentation files including architecture diagrams and audit reports.
 - `env` - helper scripts and environment configuration for tests.
 - `lib` - external libraries installed via Forge.
-- `scripts` - offchain monitoring and indexer scripts.
+- `scripts` - offchain monitoring and indexer scripts (see `scripts/README.md`).
+  - `SharePriceIndexer.ts` builds share price history in `logs/share_price.csv`.
 - `snapshots` - test snapshots used by Forge.
 - `test` - all unit, integration and fuzz tests for the protocol.
-- `vault-sdk` - TypeScript SDK for querying vault metadata, vault composition (see `vault-sdk/src/composition.ts`) and drift metrics.
+- `vault-sdk` - TypeScript SDK for querying vault metadata, vault composition, drift metrics and redemption queues.
+  - Redemption queue logic is implemented in `vault-sdk/src/VaultSDK.ts`.
 
 Root files:
 - `foundry.toml` - Forge configuration.

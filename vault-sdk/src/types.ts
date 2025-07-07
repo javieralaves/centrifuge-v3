@@ -25,3 +25,15 @@ export interface VaultComposition {
   targetBps: number
   actualBps: number
 }
+
+export interface RedemptionQueue {
+  queueSize: number
+  pendingAmount: string
+  claimableAmount: string
+}
+
+export interface SharePriceRecord {
+  timestamp: number
+  vault: string
+  price: string
+}
