@@ -61,6 +61,15 @@ Centrifuge V3 operates on a hub-and-spoke model. Each pool chooses a single hub 
 - **ComposableVault** - Extension vault supporting multiple assets with target weight tracking and drift checks.
 
 
+## Vault Factories
+
+Vault factories deploy vault implementations with the correct permissions.
+
+- **AsyncVaultFactory** - creates `AsyncVault` contracts.
+- **SyncDepositVaultFactory** - creates `SyncDepositVault` contracts.
+- **ComposableVaultFactory** - creates `ComposableVault` instances.
+
+
 ## Contributing
 #### Getting started
 ```sh
