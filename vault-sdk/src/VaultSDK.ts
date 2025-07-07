@@ -70,5 +70,16 @@ export class VaultSDK {
     }
   }
 
+  async getIdentifiers(vaultAddr: string): Promise<{ poolId: string; scId: string }> {
+    const ABI = [
+      'function poolId() view returns (uint256)',
+      'function scId() view returns (uint256)'
+    ]
+    const vault = new ethers.Contract(vaultAddr, ABI, this.provider)
+    const poolId: BigNumber = await vault.poolId()
+    const scId: BigNumber = await vault.scId()
+    return { poolId: poolId.toString(), scId: scId.toString() }
+  }
+
   // More methods coming in future prompts...
 }
