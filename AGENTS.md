@@ -22,3 +22,4 @@ Root files:
 - `LICENSE` - license information.
 - `README.md` - project documentation.
 - `.env.example` - sample configuration for offchain scripts.
+- `vault_report.ts` - CLI tool printing vault health reports using the Vault SDK and logs.

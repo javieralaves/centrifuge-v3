@@ -111,6 +111,7 @@ forge test
 ## Monitoring & Tooling
  - `scripts/VaultDriftIndexer.ts` - indexer for `DriftExceeded` events, see [scripts/README.md](scripts/README.md).
  - `scripts/SharePriceIndexer.ts` - dumps share price updates to `logs/share_price.csv`.
+ - `vault_report.ts` - CLI script generating vault health reports using indexed logs.
  - `vault-sdk` - TypeScript SDK for reading vault metadata, drift metrics and redemption queues.
 
 ## License
