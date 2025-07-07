@@ -93,5 +93,8 @@ forge test
 | [Cantina](https://cantina.xyz/)                      | V3.0        | May 2025        | Security review            | [`Report`](https://github.com/centrifuge/protocol-v3/blob/main/docs/audits/2025-05-Cantina.pdf)                                                                             |
 | [Macro](https://0xmacro.com/)                      | V3.0        | May 2025        | Security review            | [`Report`](https://0xmacro.com/library/audits/centrifuge-1.html)                                                                             |
 
+## Monitoring & Tooling
+- `scripts/VaultDriftIndexer.ts` - indexer for `DriftExceeded` events, see [scripts/README.md](scripts/README.md).
+
 ## License
 The primary license is the [Business Source License 1.1](https://github.com/centrifuge/protocol-v3/blob/main/LICENSE). However, all files in the [`src/misc`](./src/misc) folder, [`src/managers/MerkleProofManager.sol`](./src/managers/MerkleProofManager.sol), and any interface file can also be licensed under `GPL-2.0-or-later` (as indicated in their SPDX headers).
