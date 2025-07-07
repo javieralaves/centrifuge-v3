@@ -17,3 +17,11 @@ export interface DriftEvent {
   actualBps: number
   driftBps: number
 }
+
+export interface VaultComposition {
+  asset: string
+  assetId: string
+  value: string
+  targetBps: number
+  actualBps: number
+}

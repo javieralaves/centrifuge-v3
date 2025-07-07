@@ -20,4 +20,11 @@ const vaults = await sdk.listVaults()
 console.log(vaults)
 ```
 
-`listVaults()` returns the metadata stored in `VaultRegistry` for all registered vaults. Additional methods will be added in future updates.
+`listVaults()` returns the metadata stored in `VaultRegistry` for all registered vaults.
+
+```ts
+const composition = await sdk.getComposition('0xVault', '0xHoldings')
+console.log(composition)
+```
+
+`getComposition()` aggregates vault asset configs with live values from `IHoldings` to calculate the current weights.

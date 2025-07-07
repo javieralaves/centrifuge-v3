@@ -1,5 +1,6 @@
-import { VaultMetadata } from './types'
+import { VaultMetadata, VaultComposition } from './types'
 import { getAllVaults, getVaultMetadata } from './registry'
+import { fetchVaultComposition } from './composition'
 
 export class VaultSDK {
   provider: any
@@ -14,6 +15,10 @@ export class VaultSDK {
     const vaults = await getAllVaults(this.provider, this.registry)
     const meta = await Promise.all(vaults.map(v => getVaultMetadata(this.provider, this.registry, v)))
     return meta
+  }
+
+  async getComposition(vaultAddr: string, holdingsAddr: string): Promise<VaultComposition[]> {
+    return await fetchVaultComposition(this.provider, vaultAddr, holdingsAddr)
   }
 
   // More methods coming in future prompts...
