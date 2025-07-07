@@ -112,7 +112,13 @@ forge test
  - `scripts/VaultDriftIndexer.ts` - indexer for `DriftExceeded` events, see [scripts/README.md](scripts/README.md).
  - `scripts/SharePriceIndexer.ts` - dumps share price updates to `logs/share_price.csv`.
  - `vault_report.ts` - CLI script generating vault health reports using indexed logs.
+ - `alert_vaults.ts` - CLI emitting one-line vault health alerts. Returns exit code 1 if any vault fails checks.
  - `vault-sdk` - TypeScript SDK for reading vault metadata, drift metrics and redemption queues.
+
+Example:
+```sh
+ts-node alert_vaults.ts --json
+```
 
 ## License
 The primary license is the [Business Source License 1.1](https://github.com/centrifuge/protocol-v3/blob/main/LICENSE). However, all files in the [`src/misc`](./src/misc) folder, [`src/managers/MerkleProofManager.sol`](./src/managers/MerkleProofManager.sol), and any interface file can also be licensed under `GPL-2.0-or-later` (as indicated in their SPDX headers).

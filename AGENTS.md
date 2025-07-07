@@ -23,3 +23,4 @@ Root files:
 - `README.md` - project documentation.
 - `.env.example` - sample configuration for offchain scripts.
 - `vault_report.ts` - CLI tool printing vault health reports using the Vault SDK and logs.
+- `alert_vaults.ts` - CLI tool emitting vault health alerts only. Run `ts-node alert_vaults.ts [--vault <address>] [--json]` to check vaults and exit with code 1 on any warning.
