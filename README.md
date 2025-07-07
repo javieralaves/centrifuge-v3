@@ -54,6 +54,12 @@ Centrifuge V3 operates on a hub-and-spoke model. Each pool chooses a single hub 
   - `hooks` extension of Centrifuge Spoke, for implementing transfer hooks
 - `test` cotains all tests: unitary test, integration test per module, and end-to-end integration tests
 
+## Vault Types
+
+- **AsyncVault** - ERC-7540 compliant vault with asynchronous deposits and redemptions.
+- **SyncDepositVault** - Vault with synchronous deposits and asynchronous redemptions.
+- **ComposableVault** - Extension vault supporting multiple assets with target weight tracking and drift checks.
+
 
 ## Contributing
 #### Getting started
