@@ -113,6 +113,7 @@ forge test
  - `scripts/SharePriceIndexer.ts` - dumps share price updates to `logs/share_price.csv`.
  - `vault_report.ts` - CLI script generating vault health reports using indexed logs.
  - `alert_vaults.ts` - CLI emitting one-line vault health alerts. Returns exit code 1 if any vault fails checks.
+ - `export_metrics.ts` - exports vault metrics to CSV snapshots in `logs/metrics_YYYYMMDD.csv`.
  - `vault-sdk` - TypeScript SDK for reading vault metadata, drift metrics and redemption queues.
 
 Example:
