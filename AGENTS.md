@@ -11,6 +11,7 @@ Folder overview:
 - `scripts` - offchain monitoring and indexer scripts.
 - `snapshots` - test snapshots used by Forge.
 - `test` - all unit, integration and fuzz tests for the protocol.
+- `vault-sdk` - TypeScript SDK for querying vault metadata and drift metrics.
 
 Root files:
 - `foundry.toml` - Forge configuration.

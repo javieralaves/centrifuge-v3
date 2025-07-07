@@ -39,6 +39,7 @@ Centrifuge V3 operates on a hub-and-spoke model. Each pool chooses a single hub 
 │  ├── vaults
 │  └── hooks
 ├── test
+├── vault-sdk
 ├── foundry.toml
 └── README.json
 ```
@@ -53,6 +54,7 @@ Centrifuge V3 operates on a hub-and-spoke model. Each pool chooses a single hub 
   - `vaults` extension of Centrifuge Spoke, for ERC-4626 and ERC-7540 vaults
   - `hooks` extension of Centrifuge Spoke, for implementing transfer hooks
 - `test` cotains all tests: unitary test, integration test per module, and end-to-end integration tests
+- `vault-sdk` early TypeScript SDK for querying vault metadata and drift metrics
 
 ## Vault Types
 
@@ -108,6 +110,7 @@ forge test
 
 ## Monitoring & Tooling
 - `scripts/VaultDriftIndexer.ts` - indexer for `DriftExceeded` events, see [scripts/README.md](scripts/README.md).
+- `vault-sdk` - TypeScript SDK for reading vault metadata and drift metrics.
 
 ## License
 The primary license is the [Business Source License 1.1](https://github.com/centrifuge/protocol-v3/blob/main/LICENSE). However, all files in the [`src/misc`](./src/misc) folder, [`src/managers/MerkleProofManager.sol`](./src/managers/MerkleProofManager.sol), and any interface file can also be licensed under `GPL-2.0-or-later` (as indicated in their SPDX headers).
