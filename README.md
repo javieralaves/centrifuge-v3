@@ -69,6 +69,10 @@ Vault factories deploy vault implementations with the correct permissions.
 - **SyncDepositVaultFactory** - creates `SyncDepositVault` contracts.
 - **ComposableVaultFactory** - creates `ComposableVault` instances.
 
+## Metadata Registry
+
+`VaultRegistry` stores metadata for deployed vaults. Authorized factories or admins call `registerVault` after deployment to record a human readable name, description, metadata URI, factory and creator addresses, vault type and timestamp. UIs and indexers can list all vaults via `getVaults()` and fetch individual metadata with `getMetadata(vault)`.
+
 
 ## Contributing
 #### Getting started

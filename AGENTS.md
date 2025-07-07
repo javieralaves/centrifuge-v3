@@ -4,6 +4,7 @@ Folder overview:
 - `src` - main protocol contracts and libraries.
 - `contracts` - additional extension contracts used for examples or integrations.
 - `contracts/vaults/ComposableVaultFactory.sol` - deployer for creating `ComposableVault` instances.
+- `contracts/VaultRegistry.sol` - registry storing vault metadata for UIs and indexers.
 - `docs` - documentation files including architecture diagrams and audit reports.
 - `env` - helper scripts and environment configuration for tests.
 - `lib` - external libraries installed via Forge.
